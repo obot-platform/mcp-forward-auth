@@ -1,0 +1,39 @@
+{
+  "name": "mcp-forward-auth",
+  "version": "0.1.0",
+  "description": "Express middleware for forward authentication using mcp-oauth-proxy",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "postinstall": "node scripts/postinstall.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "oauth",
+    "forward-auth",
+    "authentication",
+    "mcp"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "express": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {},
+  "config": {
+    "mcpOauthProxyVersion": "latest"
+  }
+}
